@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Governance & Accountability - Social Justice App</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Header with Burger Menu -->
+    <header>
+        <div class="logo">JusticeNow</div>
+        <nav>
+            <div class="burger-menu" id="burger-menu">
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+            </div>
+            <ul class="nav-links" id="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#governance">Governance</a></li>
+                <li><a href="#accountability">Accountability</a></li>
+                <li><a href="#citizen-rights">Citizen Rights</a></li>
+                <li><a href="#report">Report an Issue</a></li>
+                <li><a href="#contact">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Login Page -->
+    <section id="login" class="login-section">
+        <div class="login-container">
+            <h2>Login to Your Account</h2>
+            <form action="dashboard.html" method="POST">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" placeholder="Enter your email" required>
+                
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" placeholder="Enter your password" required>
+                
+                <button type="submit">Login</button>
+            </form>
+            <p>Don't have an account? <a href="#register">Register here</a></p>
+        </div>
+    </section>
+
+    <!-- Home Section -->
+    <section id="home" class="hero-section">
+        <div class="hero-content">
+            <h1>Championing Social Justice & Driving Reform</h1>
+            <p>Tackling the pressing challenges faced by Africa through improved governance and accountability.</p>
+            <a href="#about" class="cta-button">Learn More</a>
+        </div>
+    </section>
+
+    <!-- About Us Section -->
+    <section id="about" class="about-section">
+        <h2>About JusticeNow</h2>
+        <p>We are committed to ensuring that every African citizen enjoys their rights to governance, safety, and transparency.</p>
+    </section>
+
+    <!-- Governance Section -->
+    <section id="governance" class="info-section">
+        <h2>Governance</h2>
+        <p>Ensuring that governments operate transparently and are held accountable for their decisions, policies, and actions.</p>
+    </section>
+
+    <!-- Accountability Section -->
+    <section id="accountability" class="info-section">
+        <h2>Accountability</h2>
+        <p>We believe in holding leaders and institutions accountable for the decisions they make and the impact on citizens.</p>
+    </section>
+
+    <!-- Citizen Rights Section -->
+    <section id="citizen-rights" class="info-section">
+        <h2>Protecting Citizen Rights</h2>
+        <p>We aim to ensure that every citizen is aware of their rights and that systems are in place to safeguard those rights.</p>
+    </section>
+
+    <!-- Report an Issue Section -->
+    <section id="report" class="report-section">
+        <h2>Report an Incident</h2>
+        <form action="submit_report.html" method="POST">
+            <label for="name">Your Name:</label>
+            <input type="text" id="name" name="name" placeholder="Enter your full name" required>
+
+            <label for="incident">Describe the Issue:</label>
+            <textarea id="incident" name="incident" rows="5" placeholder="Describe the governance or safety issue..." required></textarea>
+
+            <label for="location">Location:</label>
+            <input type="text" id="location" name="location" placeholder="Enter the location" required>
+
+            <button type="submit">Submit Report</button>
+        </form>
+    </section>
+
+    <!-- Contact Us Section -->
+    <section id="contact" class="contact-section">
+        <h2>Contact Us</h2>
+        <p>If you have any questions or need further information, feel free to reach out to us via email or our social media channels.</p>
+        <ul class="contact-info">
+            <li>Email: info@justicenow.org</li>
+            <li>Phone: +254 712 345 678</li>
+        </ul>
+        <div class="social-links">
+            <a href="#">Twitter</a>
+            <a href="#">Facebook</a>
+            <a href="#">Instagram</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 JusticeNow. All Rights Reserved.</p>
+    </footer>
+
+    <!-- JavaScript for Menu Toggle -->
+    <script>
+        const burgerMenu = document.getElementById('burger-menu');
+        const navLinks = document.getElementById('nav-links');
+        
+        burgerMenu.addEventListener('click', () => {
+            navLinks.classList.toggle('active');
+        });
+    </script>
+</body>
+</html>
+
